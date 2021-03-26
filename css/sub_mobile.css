@@ -1,0 +1,223 @@
+@charset "utf-8";
+@import url('main_mobile.css');
+
+@media screen and (max-width: 480px) {
+    * {
+        text-align: center;
+    }
+    section {
+        height: 100vh;
+        position: relative;
+    }
+    .wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h3 {
+        font-family: "CookieRun";
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    h3 span {
+        font-weight: bold;
+    }
+    h4 {
+        font-family: "NanumBarunGothic";
+        font-weight: normal;
+    }
+    .sex_btn {
+        width: 320px;
+        margin: 36px auto;
+        display: flex;
+        padding: 0 10px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .sex1, .sex2 {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        line-height: 130px;
+        font-family: "NanumBarunGothic";
+        white-space: -2;
+        font-size: 19px;
+        color: #333;  
+        box-shadow: 2px 2px 8px 2px rgba(0,0,0,.1);
+    }
+    .sex1 {
+        background: #e2fcef;
+    }
+    .sex2 {
+        background: #ffe9f6;
+    }
+    .test {
+        width: 70%;
+        color: #333;
+        font-family: "NanumBarunGothic";
+        padding: 20px 10px;
+        background: #fff;
+        border-radius: 30px;
+        font-size: 23px;
+        margin-top: 36px;
+    }
+    /* select E */
+
+    .namePlz {
+        margin-bottom: 36px;
+    }
+    .namePlz span {
+        font-weight: bold;
+    }
+    input {
+        display: block;
+        border: none;
+        width: 300px;
+        height: 60px;
+        padding-left: 20px;
+        font-size: 24px;
+        font-family: 'NanumBarunGothic';
+        box-shadow: 2px 2px 8px 2px rgba(0,0,0,.1);
+        margin-bottom: 36px;
+    }
+    input:focus, button:focus {
+        outline: none;
+    }
+    button {
+        border: 0;
+        background: transparent;
+        font-size: 30px;
+        font-family: "CookieRun";
+    }
+    /* name E */
+
+    .wrap.notice {
+        width: 100%;
+    }
+    #warning {
+        font-family: "NanumBarunGothic";
+        font-size: 18px;
+        margin: 0 auto;
+        margin-top: 36px;
+        width: 80%;
+        line-height: 26px;
+    }
+    #nextButton {
+        margin-top: 36px;
+        font-size: 20px;
+        font-family: "CookieRun";
+        color: #333;
+    }
+    /* notice E */
+
+    #testPage {
+        width: 84%;
+    }
+    .top_bar {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: bottom;
+        padding-bottom: 30px;
+    }
+    .bar_bg {
+        width: 84%;
+        height: 20px;
+        background: #fff;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,.1);
+    }
+    #bar_gauge {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8%;
+        background: #ecb8ad;
+        z-index: 9999;
+        height: 20px;
+        border-radius: 20px 0 0 20px;
+    }
+    #bar_gauge::before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        background: url('../img/bokhee_gauge.svg') no-repeat;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+    .progress {
+        font-family: "CookieRun";
+        font-size: 22px;
+        margin-top: -5px;  
+    }
+    .question_wrap {
+        position: relative;
+        overflow: scroll;
+        height: 487px;
+    }
+    .question {
+        position: absolute;
+    }
+    #slide1 {
+        width: 20px;
+        height: 20px;
+        background: #000;
+    }
+    .slide {
+        margin-bottom: 70px;
+    }
+    .slide p {
+        margin: 15px 0;
+        font-size: 22px;
+        line-height: 40px;
+        font-family: "NanumBarunGothic";
+        text-align: left;
+    }
+    #answer_btn > button {
+        display: block;
+        background: #fff;
+        width: 100%;
+        height: 64px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,.1);
+        border-radius: 20px;
+        font-size: 24px;
+    }
+    /* test E */
+
+    .circle {        
+        margin: 20px auto;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: #fff;
+        line-height: 240px;
+        font-size: 160px;
+        font-family: 'CookieRun';
+        font-weight: bold;
+        z-index: 999;
+        box-shadow: 2px 2px 8px 2px rgba(0,0,0,.1);
+        position: relative;
+    }
+    .circle.change {
+        background: transparent;
+        box-shadow: none;
+    }
+    .circle > img {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .resultPage {
+        color: #333;
+    }
+}
