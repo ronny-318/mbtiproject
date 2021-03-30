@@ -43,44 +43,65 @@
 
 <body>
     <div class="non_mobile">
-        <p>해당 테스트는 모바일에<br />최적화되어 있습니다.<br />모바일에서 이용해 주세요!</p>
+        <p>해당 테스트는 모바일에<br />최적화되어 있습니다.<br />모바일에서 이용해 주세요!<img src="img/change.svg" alt=""/></p>
     </div>
     <section>        
-        <div class="wrap">
-            <!-- title -->
-            <p class="logo"><img src="img/logo_full.png" /></p>
-            <p id="title">엄마, 아빠의 성향을 통해<br />우리 아이의 성향을 예측해 봐요!<br /><br />우리 아이에게 딱 맞는 육아용품도<br />오팔마켓 맘즈가 추천해 드려요!</p>
-            <a class="start" href="sub/2_gender.html">테스트 시작!</a>
-            <!-- title E -->
+        <div class="wrap main">
+            <div class="wrapper">
+                <!-- title -->
+                <p class="logo"><img src="img/logo_full.png" /></p>
+                <p id="title">엄마, 아빠의 성향을 통해<br />우리 아이의 성향을 예측해 봐요!<br /><br />우리 아이에게 딱 맞는 육아용품도<br />오팔마켓 맘즈가 추천해 드려요!</p>
+                <a class="start" href="sub/2_gender.html">테스트 시작!</a>
+                <!-- title E -->
 
-            <!-- slide -->
-            <div class="autoplay">
-                <div class="animal"><img src="img/slide/hippo.svg" /></div>
-                <div class="animal"><img src="img/slide/bear.svg" /></div>
-                <div class="animal"><img src="img/slide/owl.svg" /></div>
-                <div class="animal"><img src="img/slide/dolphin.svg" /></div>
-                <div class="animal"><img src="img/slide/lion.svg" /></div>
-                <div class="animal"><img src="img/slide/cat.svg" /></div>
-                <div class="animal"><img src="img/slide/rhino.svg" /></div>
-                <div class="animal"><img src="img/slide/giraffe.svg" /></div>
-                <div class="animal"><img src="img/slide/sheep.svg" /></div>
-                <div class="animal"><img src="img/slide/dog.svg" /></div>
-                <div class="animal"><img src="img/slide/tiger.svg" /></div>
-                <div class="animal"><img src="img/slide/zebra.svg" /></div>
-                <div class="animal"><img src="img/slide/rabbit.svg" /></div>
-                <div class="animal"><img src="img/slide/monkey.svg" /></div>
-                <div class="animal"><img src="img/slide/elephant.svg" /></div>
-                <div class="animal"><img src="img/slide/parrot.svg" /></div>
-            </div>
-            <!-- slide E -->
+                <!-- slide -->
+                <div class="autoplay">
+                    <div class="animal"><img src="img/slide/hippo.svg" /></div>
+                    <div class="animal"><img src="img/slide/bear.svg" /></div>
+                    <div class="animal"><img src="img/slide/owl.svg" /></div>
+                    <div class="animal"><img src="img/slide/dolphin.svg" /></div>
+                    <div class="animal"><img src="img/slide/lion.svg" /></div>
+                    <div class="animal"><img src="img/slide/cat.svg" /></div>
+                    <div class="animal"><img src="img/slide/rhino.svg" /></div>
+                    <div class="animal"><img src="img/slide/giraffe.svg" /></div>
+                    <div class="animal"><img src="img/slide/sheep.svg" /></div>
+                    <div class="animal"><img src="img/slide/dog.svg" /></div>
+                    <div class="animal"><img src="img/slide/tiger.svg" /></div>
+                    <div class="animal"><img src="img/slide/zebra.svg" /></div>
+                    <div class="animal"><img src="img/slide/rabbit.svg" /></div>
+                    <div class="animal"><img src="img/slide/monkey.svg" /></div>
+                    <div class="animal"><img src="img/slide/elephant.svg" /></div>
+                    <div class="animal"><img src="img/slide/parrot.svg" /></div>
+                </div>
+                <!-- slide E -->
 
-            <!-- button -->
-            <div class="buttons">
-                <a class="share" href="javascript:se">MBT아이<br />공유하기</a>
-                <a class="download" href="#">오팔마켓 맘즈<br />다운로드</a>
+                <!-- button -->
+                <div class="buttons">
+                    <a class="share" href="#">MBT아이<br />공유하기</a>
+                    <a class="download" href="#">오팔마켓 맘즈<br />다운로드</a>
+                </div>
+                <!-- button E -->
             </div>
-            <!-- button E -->
         </div>
     </section>
+    <script>
+        $(function(){
+            $('.autoplay').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplayspeed: 3000,
+                prevArrow: false,
+                nextArrow: false,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                swipe: false,
+                swipeToSlide: false,
+                touchMove: false,
+            });
+        })
+    </script>
 </body>
 </html>
