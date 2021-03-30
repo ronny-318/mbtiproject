@@ -161,11 +161,15 @@
         width: 80%;
         margin: 0 auto;
         margin-bottom: 14px;
+        font-size: 15px;
     }
     .group.btm dt {
         width: 30%;
         line-height: 1.7;
-        font-size: 14px;
+        font-weight: bold;
+    }
+    .group.btm dd {
+        width: 70%;
     }
     .group.btm dl ul li {
         line-height: 1.7;
@@ -237,7 +241,7 @@
     }
     #exp {        
         font-family: 'Noto Sans KR', sans-serif;
-        font-size: 16px;
+        font-size: 17px;
         letter-spacing: -0.75px;
         margin: 10px 0;
     }
@@ -256,7 +260,6 @@
         letter-spacing: -0.75px;
         line-height: 1.6;
         margin-bottom: 10px;
-        font-size: 14px;
     }
     .buttons.result {
         width: 100%;
@@ -301,9 +304,9 @@
     .result1_1 dd ul li {        
         font-family: "Noto Sans KR", sans-serif;
         letter-spacing: -0.75px;
-        font-size: 14px;
         margin-bottom: 10px;
         line-height: 1.6;
+        font-size: 16px;
     }
     /*result1_1 E*/
     .result2 {

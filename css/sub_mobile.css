@@ -210,10 +210,6 @@
         height: 240px;
         border-radius: 50%;
         background: #fff;
-        line-height: 240px;
-        font-size: 160px;
-        font-family: 'CookieRun';
-        font-weight: bold;
         z-index: 999;
         box-shadow: 2px 2px 8px 2px rgba(0,0,0,.1);
         position: relative;
