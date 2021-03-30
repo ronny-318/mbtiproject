@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,15 +32,28 @@
     <script src="../js/main.js"></script>
     <link href="../css/sub_mobile.css" rel="stylesheet" />
 </head>
+
 <body>
     <section>
-        <div class="wrap">
-                <h3 class="namePlz">우리 아이의<br /><span>이름</span>을 입력해 주세요.</h3>
-                <form action="3_gender.html">
-                    <input id="nameInput" type="text" name="name" autocomplete="off"/>
-                    <button id="nameButton" type="submit" onclick="location.href='3_gender.html'">다음으로 &#x1F449;</button>
-                </form>
+        <div class="wrap" id="testPage">
+            <div class="top_bar">
+                <div class="bar_bg"><span id="bar_gauge"></span></div>
+                <p class="progress"><span id="current">1</span>/12</p>
+            </div>
+            <div class="question_wrap">
+                <div class="question">
+                    <div class="slide">
+                        <p>아이 엄마가 "나 변한 거 없어?" 라고 물었을 때 당신의 반응은?</p>
+                        <div id="answer_btn">
+                            <button>"립스틱 새로 샀어?" 사소한 변화도 금방 알아챈다.</button>
+                            <button>"글쎄, 잘 모르겠는데." 사소한 변화에 둔감한 편이다.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="temporary" href="7_loading.html" id="nextButton">임시버튼</a>
         </div>
+    </div>
     </section>
 </body>
 </html>

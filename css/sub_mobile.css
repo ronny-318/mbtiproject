@@ -26,7 +26,8 @@
         font-weight: bold;
     }
     h4 {
-        font-family: "NanumBarunGothic";
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: -0.75px;
         font-weight: normal;
     }
     .sex_btn {
@@ -42,7 +43,8 @@
         height: 130px;
         border-radius: 50%;
         line-height: 130px;
-        font-family: "NanumBarunGothic";
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: -0.75px;
         white-space: -2;
         font-size: 19px;
         color: #333;  
@@ -57,7 +59,8 @@
     .test {
         width: 70%;
         color: #333;
-        font-family: "NanumBarunGothic";
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: -0.75px;
         padding: 20px 10px;
         background: #fff;
         border-radius: 30px;
@@ -98,7 +101,8 @@
         width: 100%;
     }
     #warning {
-        font-family: "NanumBarunGothic";
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: -0.75px;
         font-size: 18px;
         margin: 0 auto;
         margin-top: 36px;
@@ -114,15 +118,19 @@
     /* notice E */
 
     #testPage {
-        width: 84%;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
     }
     .top_bar {
-        width: 100%;
-        margin: 0 auto;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         vertical-align: bottom;
-        padding-bottom: 30px;
+        padding-bottom: 30px;        
+        margin: 0 auto;
     }
     .bar_bg {
         width: 84%;
@@ -154,8 +162,7 @@
     }
     .progress {
         font-family: "CookieRun";
-        font-size: 22px;
-        margin-top: -5px;  
+        font-size: 1.1em;
     }
     .question_wrap {
         position: relative;
@@ -165,31 +172,29 @@
     .question {
         position: absolute;
     }
-    #slide1 {
-        width: 20px;
-        height: 20px;
-        background: #000;
-    }
-    .slide {
-        margin-bottom: 70px;
-    }
     .slide p {
         margin: 15px 0;
-        font-size: 22px;
+        font-size: 19px;
         line-height: 40px;
-        font-family: "NanumBarunGothic";
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: -0.75px;
         text-align: left;
+        margin-bottom: 50px;
     }
     #answer_btn > button {
         display: block;
         background: #fff;
         width: 100%;
-        height: 64px;
+        padding: 24px;
         margin: 0 auto;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         box-shadow: 1px 1px 3px 0px rgba(0,0,0,.1);
         border-radius: 20px;
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .temporary{
+        font-size: 12px;
+        margin: 0;
     }
     /* test E */
 
